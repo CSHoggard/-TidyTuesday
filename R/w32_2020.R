@@ -72,6 +72,7 @@ avatar_clean <- avatar %>%
    legend.position = "bottom",
    legend.title = element_blank(),
    legend.background = element_rect(fill = "grey97"),
+   legend.key = element_rect(fill = "grey97", color = NA),
    axis.title.x = element_text(color="grey40" , vjust=-0.95),
    axis.title.y = element_text(color="grey40" , vjust=-0.95),
    axis.line.x = element_blank(),
