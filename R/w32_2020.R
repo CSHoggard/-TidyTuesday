@@ -71,6 +71,7 @@ avatar_clean <- avatar %>%
    panel.background = element_rect(fill = "grey97", linetype = 0),
    legend.position = "bottom",
    legend.title = element_blank(),
+   legend.background = element_rect(fill = "grey97"),
    axis.title.x = element_text(color="grey40" , vjust=-0.95),
    axis.title.y = element_text(color="grey40" , vjust=-0.95),
    axis.line.x = element_blank(),
@@ -90,4 +91,4 @@ avatar_clean <- avatar %>%
     ),
     text = element_text(family = "Open Sans"))
 
-ggsave(here("images", "Week_32_Avatar.tiff"), dpi = 400)
+ggsave(here("images", "Week_32_Avatar.png"), dpi = 400)
