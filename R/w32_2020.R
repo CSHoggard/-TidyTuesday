@@ -1,6 +1,7 @@
 library(tidyverse)
 library(extrafont)
 library(here)
+library(gganimate)
 
 avatar <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-08-11/avatar.csv')
 
@@ -18,7 +19,7 @@ avatar_clean <- avatar %>%
   mutate(series_rating = mean(imdb_rating)) %>%
   unique()
 
- ggplot(avatar_clean, aes(imdb_rating, book_chapter, colour = book)) + 
+ p <- ggplot(avatar_clean, aes(imdb_rating, book_chapter, colour = book)) + 
    geom_point() +
    geom_segment(aes(xend = series_rating, yend = book_chapter)) +
    geom_segment(
@@ -59,7 +60,7 @@ avatar_clean <- avatar %>%
        y = "Chapter",
        title = "Avatar: The Last Airbender",
        subtitle = "(IMDb ratings vs. chapter)",
-       caption = "#TidyTuesday data from {appa} (https://github.com/averyrobbins1/appa)") +
+       caption = "#TidyTuesday data from (https://github.com/averyrobbins1/appa)") +
   xlim(7,10) + 
   scale_color_manual(values = c(
     "Water" = "grey40",
@@ -91,5 +92,16 @@ avatar_clean <- avatar %>%
       color = "grey60"
     ),
     text = element_text(family = "Open Sans"))
-
-ggsave(here("images", "Week_32_Avatar.png"), dpi = 400)
+ 
+ plot(p)
+ 
+ ggsave(here("images", "Week_32_Avatar.png"), dpi = 400)
+ 
+ p2 <- p + geom_point(aes(group = seq_along(book_chapter))) +
+    transition_reveal(book_chapter)
+ 
+ plot(p2)
+ 
+ animate(p2, fps=15, height=1600, width=1400, res=400)
+ anim_save("avatar.gif")
+ 
