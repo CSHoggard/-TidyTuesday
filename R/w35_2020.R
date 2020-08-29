@@ -83,7 +83,7 @@ ggplot(chopped.clean, aes(n, reorder(word, n))) +
   geom_col(fill = "#F75821", width = 0.75) + 
   xlim(0, 40) +
   labs(title = "What Makes A Good Dessert?",
-       subtitle = "The most common ingredients in meals in the CHOPPED TV Series", 
+       subtitle = "The most common ingredients in meals in the Chopped TV Series", 
        caption = "@CSHoggard | Data from Kaggle | #TidyTuesday Week 35",
        x = "Number of dishes",
        y = "") +
