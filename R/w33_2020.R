@@ -95,7 +95,7 @@ avatar_clean <- avatar %>%
  
  plot(p)
  
- ggsave(here("images", "Week_32_Avatar.png"), dpi = 400)
+ ggsave(here("images", "Week_33_Avatar.png"), dpi = 400)
  
  p2 <- p + geom_point(aes(group = seq_along(book_chapter))) +
     transition_reveal(book_chapter)
