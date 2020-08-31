@@ -1,7 +1,6 @@
 library(tidyverse)
 library(extrafont)
 library(here)
-library(tidytuesdayR)
 library(tidytext)
 library(magick)
 
