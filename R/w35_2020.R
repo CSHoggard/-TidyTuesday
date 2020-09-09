@@ -74,7 +74,7 @@ chopped.clean <- chopped %>%
   filter(row_number() <= 5) %>%
   ungroup()
 
-logo_raw <- image_read("R/chopped.png")
+logo_raw <- image_read("R/week_35_image_data/chopped.png")
 logo <- as.raster(logo_raw)
 
 ggplot(chopped.clean, aes(n, reorder(word, n))) +
