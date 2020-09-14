@@ -52,8 +52,8 @@ p <- ggplot(friends.parsed, aes(season, word_sum, colour = speaker)) +
         axis.title.x = element_text(color = "grey97", margin = margin(20, 0, 5, 0)),
         axis.text.y = element_text(color = "grey97", margin = margin(0, 20, 0, 5)),
         axis.title.y = element_text(color = "grey97"),
-        plot.title = element_text(color = "grey97", family = "Gabriel Weiss' Friends Font",size = 32, margin = margin(0, 0, 10, 0)),
-        plot.subtitle = element_text(color = "grey97", size = 12, margin = margin(0, 0, 20, 0)),
+        plot.title = element_text(color = "grey97", hjust = 0.5, family = "Gabriel Weiss' Friends Font",size = 32, margin = margin(0, 0, 10, 0)),
+        plot.subtitle = element_text(color = "grey97", hjust = 0.5, size = 12, margin = margin(0, 0, 20, 0)),
         plot.caption = element_text(size = 9, colour = "grey97", margin = margin(20, 0, 0, 0)))
 
 ggdraw() +
