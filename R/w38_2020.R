@@ -26,7 +26,7 @@ p <- ggplot(kids.clean, aes(rank, inf_adj_perchild, fill = state, alpha = 0.5)) 
   theme_minimal() +
   theme(legend.position = "none",
         plot.margin = margin(30, 30, 30, 30),
-        plot.title = element_text(size = 20, family = "IBM Plex Sans", margin = margin(20,0,5,0)),
+        plot.title = element_text(size = 20, family = "IBM Plex Sans", face = "bold", margin = margin(20,0,5,0)),
         plot.subtitle = element_text(size = 14, family = "IBM Plex Sans", margin = margin(0,0,15,0)),
         plot.caption = element_text(size = 10, family = "IBM Plex Sans", margin = margin(20, 0, 0, 0)),
         axis.text.x = element_blank(),
