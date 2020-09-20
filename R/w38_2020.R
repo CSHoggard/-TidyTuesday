@@ -39,5 +39,5 @@ p <- ggplot(kids.clean, aes(rank, inf_adj_perchild, fill = state, alpha = 0.5)) 
        subtitle = "Top 15 States in...",
        caption = "Source: State and Local Government Finance Survey (United States Census Bureau) \n Courtesy of the Urban Institute and the tidykids R package \n @CSHoggard | #TidyTuesday Week 38") 
 
-animate(p, nframes = 130, width = 450, height = 600)
+animate(p, nframes = 190, fps = 12, width = 450, height = 600)
 anim_save("images/Week_38_Kids.gif", animation = last_animation())
