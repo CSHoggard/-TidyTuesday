@@ -1,10 +1,10 @@
 ## TidyTuesday
 
-#TidyTuesday visualisations and code. Founded by [Thomas Mock], and organised by the R4DS (R for Data Science) online learning community, #TidyTuesday is a weekly data challenge which focuses on data cleaning, wrangling and visualisation using `{ggplot2}`, `{tidyr}`, `{dplyr}` and other tools that are part of the [`{tidyverse}`]. More information on this challenge can be found here: https://github.com/rfordatascience/tidytuesday
+#TidyTuesday visualisations and code. Founded by [Thomas Mock], and organised by the R4DS (R for Data Science) online learning community, #TidyTuesday is a weekly data challenge which focuses on data cleaning, wrangling and visualisation using `{ggplot2}`, `{tidyr}`, `{dplyr}` and other tools that are part of the [`{tidyverse}`]. More information on this challenge can be found here: https://github.com/rfordatascience/tidytuesday 💻
 
 Feedback is very welcome via [Twitter](https://twitter.com/CSHoggard) or [mail](mailto:christianhoggard@gmail.com).
 
-##2020
+## 2020
 
 ### Week 38 (United States Kids Spending) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w38_2020.R)
 
