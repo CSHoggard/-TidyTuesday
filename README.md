@@ -1,4 +1,20 @@
-## TidyTuesday
+<h1 style="font-weight:normal" align="center">
+  &nbsp;#TidyTuesday &nbsp;
+</h1>
+
+<div align="center">
+
+&nbsp;&nbsp;&nbsp;:e-mail: [Email][Email]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;:speech_balloon: [Twitter][Twitter]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;:necktie: [LinkedIn][LinkedIn]
+
+</div>
+
+<!--
+Quick Link
+-->
+
+[Twitter]:https://twitter.com/cshoggard
+[LinkedIn]:https://www.linkedin.com/in/cshoggard/
+[Email]:mailto:christianhoggard@gmail.com
 
 #TidyTuesday visualisations and code. Founded by [Thomas Mock], and organised by the R4DS (R for Data Science) online learning community, #TidyTuesday is a weekly data challenge which focuses on data cleaning, wrangling and visualisation using `{ggplot2}`, `{tidyr}`, `{dplyr}` and other tools that are part of the [`{tidyverse}`]. More information on this challenge can be found here: https://github.com/rfordatascience/tidytuesday 💻
 
