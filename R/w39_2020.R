@@ -28,29 +28,29 @@ expeditions %>% select(year,
   annotate("text",
            x = 1945,
            y = 0.69,
-           size = 2.75,
+           size = 2.9,
            colour = "grey50",
            family = "Oswald",
-           label = "Between 1905 and Spring 2020 there have been a total of 10,346 expeditions in the Nepal Himalaya.\n711 expeditions have resulted in the loss of life, and a shocking 1106 fatalities are recorded.") +
+           label = "Between 1905 and Spring 2020 there have been a total of 10,346 expeditions in the Nepal Himalaya.\n711 expeditions have resulted in the loss of life, and 1106 fatalities are recorded.") +
   annotate("text",
            x = 1945,
-           y = 0.655,
-           size = 2.75,
+           y = 0.652,
+           size = 2.9,
            colour = "#EAD637",
            family = "Oswald",
            label = 
             "Each yellow dot is an expedition with at least one fatality.") +
   annotate("text",
            x = 1945,
-           y = 0.58,
-           size = 2.75,
+           y = 0.576,
+           size = 2.9,
            colour = "grey50",
            family = "Oswald",
            label = 
-           "Of these fatalities, over a third (40%) of deaths are Sherpas. \n
+           "Of these fatalities, over a third (40%) are locally-hired guides. \n
            Being a Sherpa is a job of little glory. While lucrative, Sherpas do not receive certificates to prove
-           they have reached the top: The Nepalese Tourism Ministry say that Sherpas are just 'doing their job'.\n
-           While there have been no Sherpa deaths on Everest since 2015 other 
+           they have reached summits: The Nepalese Tourism Ministry say that Sherpas are just 'doing their job'.\n
+           And while there have been no Sherpa deaths on Everest since 2015 other 
            mountains continue to kill, and earthquakes and avalanches are too frequent.") + 
   scale_fill_manual(values = c("#918B76","#EAD637")) +
   scale_colour_manual(values = c("#918B76","#EAD637")) +
@@ -64,11 +64,11 @@ expeditions %>% select(year,
         axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         axis.text.y = element_blank(),
-        axis.text.x = element_text(size = 10, family = "Oswald", face = "bold", margin = margin(-10, 0, 0, 0)),
+        axis.text.x = element_text(size = 10, family = "Oswald", face = "bold", margin = margin(-25, 0, 0, 0)),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank())
 
-ggsave("-TidyTuesday/images/Week_39_Himalayas.png", plot = last_plot(), dpi = 500, width = 6.79, height = 12.0)       
+ggsave("-TidyTuesday/images/Week_39_Himalayas.png", plot = last_plot(), dpi = 500, width = 7, height = 13)       
 
 
 
