@@ -43,27 +43,34 @@ p1 <- clean.lyrics %>%
   ungroup() %>%
   ggplot(aes(reorder_within(word, n, artist), n,
              fill = artist)) +
-  geom_col(alpha = 0.7, show.legend = FALSE) +
-  geom_text(aes(label = n, hjust = 1.2, family = "Noto Sans"), size = 5, color = "white") +
-  scale_x_reordered() +
+  geom_col(alpha = 0.7,
+           show.legend = FALSE) +
+  scale_fill_manual(values = c("#F18099", "#4898D2")) +
   coord_flip() +
-  facet_wrap(~artist, scales = "free") +
-  labs(x = NULL, y = "Word count",
-    title = "INVESTIGATING...\n523 BEYONCÉ AND TAYLOR SWIFT SONGS",
-    subtitle = "WHAT WORDS WERE USED MOST OFTEN?") +
-  scale_fill_manual(values = c("#F18099", "#4898D2")) + 
+  scale_x_reordered() +
+  facet_wrap(~artist, 
+             scales = "free") +
+  labs(title = "INVESTIGATING...\n523 BEYONCÉ AND TAYLOR SWIFT SONGS",
+       subtitle = "WHAT WORDS WERE USED MOST OFTEN?") +
+  geom_text(aes(
+    label = n,
+    hjust = 1.2,
+    family = "Noto Sans"),
+    size = 5,
+    color = "white") +
   theme_minimal() +
-  theme(plot.margin = margin(30, 40, 25, 40),
+  theme(plot.margin = margin(20,20,30,15),
         plot.background = element_rect(fill = "#F8F3F2", color = NA),
-        plot.title = element_text(size = 28, family = "Noto Sans", face = "bold", colour = "#8E4F9A", hjust = 0.5, margin = margin(0,0,40,0)),
+        plot.title = element_text(size = 32, family = "Source Sans Pro", face = "bold", colour = "#8E4F9A", hjust = 0.5, margin = margin(0,0,40,0)),
         plot.subtitle = element_text(size = 16, family = "Noto Sans", face = "bold", colour = "#8F7E84", hjust = 0.5, margin = margin(0,0,20,0)),
         axis.title.x = element_blank(),
         axis.title.y = element_blank(),
-        strip.text.x = element_text(size = 12, family = "Noto Sans", face = "bold", colour = "#8F7E84"),
         axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 10, family = "Noto Sans", face = "bold", colour = "#8F7E84"),
+        axis.text.y = element_text(size = 12, family = "Noto Sans", face = "bold", colour = "#8F7E84", margin = margin(0,-5,0,0)),
+        panel.grid.minor = element_blank(),
         panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank())
+        strip.text.x = element_text(size = 12, family = "Noto Sans", face = "bold", colour = "#8F7E84"))
+
 
 p2 <- clean.lyrics %>% 
   count(word, artist, sort = TRUE) %>%
@@ -75,24 +82,24 @@ p2 <- clean.lyrics %>%
   ungroup() %>%
   mutate(word = reorder(word, logratio)) %>%
   ggplot(aes(word, logratio, fill = logratio < 0)) +
-  geom_col(show.legend = FALSE) +
-  labs(subtitle = "WHO SAID WHAT?",
+  geom_col(width=0.8, show.legend = FALSE) +
+  labs(subtitle = "WHO IS MORE LIKELY TO SAY...",
        caption = "@CSHoggard  •  Data: Rosie Baillie and Dr. Sara Stoudt  •  #TidyTuesday Week 40") +
   scale_fill_manual(values = c("#F18099", "#4898D2")) +
   coord_flip() +
   ylim(-6,6) +
-  ylab("log odds ratio (Beyoncé/Taylor Swift)") +
   theme_minimal() +
-  theme(plot.margin = margin(10, 0, 20, 0),
-    plot.background = element_rect(fill = "#F8F3F2", color = NA),
-    plot.subtitle = element_text(size = 18, family = "Noto Sans", face = "bold", colour = "#8F7E84", hjust = 0.5, margin = margin(0, 0, 20, 0)),
-    plot.caption = element_text(size = 10, family = "Noto Sans", colour = "#8F7E84", hjust = 0.5, margin = margin(40, 0, -5, 0)),
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank(),
-    axis.title.x = element_blank(),
-    axis.title.y = element_blank(),
-    axis.text.x = element_blank(),
-    axis.text.y = element_text(size = 10, family = "Noto Sans", face = "bold", colour = "#8F7E84")) +
+  theme(plot.margin = margin(10, 80, 20, 60),
+        plot.background = element_rect(fill = "#F8F3F2", color = NA),
+        plot.subtitle = element_text(size = 18, family = "Noto Sans", face = "bold", colour = "#8F7E84", hjust = 0.5, margin = margin(0, 0, 20, 0)),
+        plot.caption = element_text(size = 10, family = "Noto Sans", colour = "#8F7E84", hjust = 0.5, margin = margin(40, 0, 5, 0)),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 10, family = "Noto Sans", face = "bold", colour = "#8F7E84"),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_blank()
+  ) +
   draw_image(swift, scale=13, y=3, x=8.5) + 
   draw_image(beyonce, scale=13, y=-4, x=27)
 
