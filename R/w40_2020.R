@@ -40,6 +40,7 @@ p1 <- clean.lyrics %>%
   count(word, artist, sort = TRUE) %>%
   group_by(artist) %>%
   top_n(5) %>%
+  mutate(n_text = glue::glue("{n} times")) %>%
   ungroup() %>%
   ggplot(aes(reorder_within(word, n, artist), n,
              fill = artist)) +
@@ -53,10 +54,10 @@ p1 <- clean.lyrics %>%
   labs(title = "INVESTIGATING...\n523 BEYONCÉ AND TAYLOR SWIFT SONGS",
        subtitle = "WHAT WORDS WERE USED MOST OFTEN?") +
   geom_text(aes(
-    label = n,
+    label = n_text,
     hjust = 1.2,
     family = "Noto Sans"),
-    size = 5,
+    size = 3,
     color = "white") +
   theme_minimal() +
   theme(plot.margin = margin(20,20,30,15),
@@ -81,7 +82,7 @@ p2 <- clean.lyrics %>%
   top_n(15, abs(logratio)) %>%
   ungroup() %>%
   mutate(word = reorder(word, logratio)) %>%
-  ggplot(aes(word, logratio, fill = logratio < 0)) +
+  ggplot(aes(word, logratio, fill = logratio < 0))+
   geom_col(width=0.8, show.legend = FALSE) +
   labs(subtitle = "WHO IS MORE LIKELY TO SAY...",
        caption = "@CSHoggard  •  Data: Rosie Baillie and Dr. Sara Stoudt  •  #TidyTuesday Week 40") +
