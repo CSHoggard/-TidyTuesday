@@ -21,9 +21,13 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [mail](mailt
 
 ## 2020
 
+### Week 40 (Beyoncé and Taylor Swift Lyrics 🎵) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w40_2020.R)
+
+![./images/Week_40_Lyrics.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_40_Lyrics.png)
+
 ### Week 39 (The Himalayan Database) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w39_2020.R)
 
-![./images/Week_38_Kids.gif](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_39_Himalayas.png)
+![./images/Week_39_Himalayas.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_39_Himalayas.png)
 
 ### Week 38 (United States Kids Spending) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w38_2020.R)
 
