@@ -60,7 +60,7 @@ p1 <- clean.lyrics %>%
     size = 3,
     color = "white") +
   theme_minimal() +
-  theme(plot.margin = margin(20,20,30,15),
+  theme(plot.margin = margin(20,20,30,30),
         plot.background = element_rect(fill = "#F8F3F2", color = NA),
         plot.title = element_text(size = 32, family = "Source Sans Pro", face = "bold", colour = "#8E4F9A", hjust = 0.5, margin = margin(0,0,40,0)),
         plot.subtitle = element_text(size = 16, family = "Noto Sans", face = "bold", colour = "#8F7E84", hjust = 0.5, margin = margin(0,0,20,0)),
@@ -82,27 +82,27 @@ p2 <- clean.lyrics %>%
   top_n(15, abs(logratio)) %>%
   ungroup() %>%
   mutate(word = reorder(word, logratio)) %>%
-  ggplot(aes(word, logratio, fill = logratio < 0))+
+  ggplot(aes(word, logratio, fill = logratio < 0)) +
   geom_col(width=0.8, show.legend = FALSE) +
+  geom_text(aes(label = word), size = 3, colour = "#F8F3F2",  family = "Noto Sans", fontface = "bold", position = position_stack(vjust = .5)) +
   labs(subtitle = "WHO IS MORE LIKELY TO SAY...",
        caption = "@CSHoggard  •  Data: Rosie Baillie and Dr. Sara Stoudt  •  #TidyTuesday Week 40") +
   scale_fill_manual(values = c("#F18099", "#4898D2")) +
   coord_flip() +
-  ylim(-6,6) +
   theme_minimal() +
-  theme(plot.margin = margin(10, 80, 20, 60),
+  theme(plot.margin = margin(10, 80, 20, 80),
         plot.background = element_rect(fill = "#F8F3F2", color = NA),
         plot.subtitle = element_text(size = 18, family = "Noto Sans", face = "bold", colour = "#8F7E84", hjust = 0.5, margin = margin(0, 0, 20, 0)),
         plot.caption = element_text(size = 10, family = "Noto Sans", colour = "#8F7E84", hjust = 0.5, margin = margin(40, 0, 5, 0)),
         axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 10, family = "Noto Sans", face = "bold", colour = "#8F7E84"),
+        axis.text.y = element_blank(),
         panel.grid.minor = element_blank(),
         panel.grid.major = element_blank()
   ) +
   draw_image(swift, scale=13, y=3, x=8.5) + 
-  draw_image(beyonce, scale=13, y=-4, x=27)
+  draw_image(beyonce, scale=13, y=-3.6, x=27)
 
 (p1 / p2) + 
   plot_layout(heights = c(0.6,2))
