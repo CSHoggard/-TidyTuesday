@@ -21,6 +21,10 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [mail](mailt
 
 ## 2020
 
+### Week 41 (NCAA Women's Basketball 🏀) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w41_2020.R)
+
+![./images/Week_41_NCAA.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_41_NCAA.png)
+
 ### Week 40 (Beyoncé and Taylor Swift Lyrics 🎵) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w40_2020.R)
 
 ![./images/Week_40_Lyrics.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_40_Lyrics.png)
