@@ -21,6 +21,10 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ## 2020
 
+### Week 42 (DataSaurus Dozen 🦕) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w42_2020.R)
+
+![./images/Week_42_Datasaurus.gif](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_42_Datasaurus.gif)
+
 ### Week 41 (NCAA Women's Basketball 🏀) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w41_2020.R)
 
 ![./images/Week_41_NCAA.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_41_NCAA.png)
