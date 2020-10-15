@@ -22,13 +22,13 @@ p <- datasaurus %>%
   scale_color_manual(values = colours, guide = "none") +
   scale_x_continuous(limits = c(0, 120), breaks = seq(0, 100, by = 20)) +
   scale_y_continuous(limits = c(0, 140), breaks = seq(0, 100, by = 20)) +
-  geom_text(aes(x = 50, y = 136, label = paste("mean (x):", round(mean_x,4)), family = "Commissioner"), size = 4.5, color = "grey20") +
-  geom_text(aes(x = 50, y = 132, label = paste("mean (y):", round(mean_y,4)), family = "Commissioner"), size = 4.5, color = "grey20") +
-  geom_text(aes(x = 50, y = 128, label = paste("standard deviation (x):", round(sd_x,4)), family = "Commissioner"), size = 4.5, color = "grey20") +
-  geom_text(aes(x = 50, y = 124, label = paste("standard deviation (y):", round(sd_y,4)), family = "Commissioner"), size = 4.5, color = "grey20") +
-  geom_text(aes(x = 50, y = 120, label = paste("correlation", round(coefficient,4)), family = "Commissioner"), size = 4.5, color = "grey20") +
+  geom_text(aes(x = 50, y = 136, label = paste("mean (x):", round(mean_x,4)), family = "Commissioner"), size = 4.5, color = "grey70") +
+  geom_text(aes(x = 50, y = 132, label = paste("mean (y):", round(mean_y,4)), family = "Commissioner"), size = 4.5, color = "grey70") +
+  geom_text(aes(x = 50, y = 128, label = paste("standard deviation (x):", round(sd_x,4)), family = "Commissioner"), size = 4.5, color = "grey70") +
+  geom_text(aes(x = 50, y = 124, label = paste("standard deviation (y):", round(sd_y,4)), family = "Commissioner"), size = 4.5, color = "grey70") +
+  geom_text(aes(x = 50, y = 120, label = paste("correlation", round(coefficient,4)), family = "Commissioner"), size = 4.5, color = "grey70") +
   labs(title = "The Importance of Data Visualisation",
-       subtitle = "<b style='font-size:24pt;'>Case Study: The DataSaurus Dozen</b><br><br>The DataSaurus Dozen highlights the importance of visualising data: while summary statistics (means, standard deviations and correlation measures) for various datasets can be the same their distributions can be significantly varied. This was first elegantly demonstrated in 1973 by the English statistician Francis John Anscombe. Anscombe's four datasets (<span style = 'color:#068a84;'>Anscombe's Quartet</span>) appeared similar using typical summary statistics, yet told four different stories when graphed. <br><br>In 2016, Alberto Cairo developed the DataSaurus Dozen: a series of 13 different datasets with almost-identical summary statistics and different visualisations. This was published, together with other datasets, by Justin Matejka and George Fitzmaurice in 2017.",
+       subtitle = "<b style='font-size:24pt;'>Case Study: The DataSaurus Dozen</b><br><br>The DataSaurus Dozen highlights the importance of visualising data; while summary statistics (means, standard deviations and correlation measures) for various datasets can be the same, their distributions can be significantly varied. This was first elegantly demonstrated in 1973 by the English statistician Francis John Anscombe. Anscombe's four datasets (<span style = 'color:#068a84;'>Anscombe's Quartet</span>) appeared to be similar when using typical summary statistics, yet told four different stories when graphed. <br><br>In 2016, Alberto Cairo developed the DataSaurus Dozen: a series of 13 different datasets with almost-identical summary statistics and different visualisations. This was published, together with other datasets, by Justin Matejka and George Fitzmaurice in 2017.",
        caption = "• Produced by @CSHoggard  |   #TidyTuesday Week 42 • \n • Data: Francis Anscombe, Alberto Cairo, Justin Matejka & George Fitzmaurice •") +
   theme_minimal() +
   theme(plot.title = element_text(family = "Commissioner", 
@@ -59,5 +59,5 @@ p <- datasaurus %>%
   transition_states(dataset, 10, 3) + 
   ease_aes('cubic-in-out') 
 
-animate(p, nframes = 120, fps = 10, detail = 5, width = 900, height = 1100)
+animate(p, nframes = 120, fps = 8, detail = 5, width = 900, height = 1100)
 anim_save("images/Week_42_Datasaurus.gif", animation = last_animation())
