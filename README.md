@@ -33,27 +33,27 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ![./images/Week_40_Lyrics.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_40_Lyrics.png)
 
-### Week 39 (The Himalayan Database) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w39_2020.R)
+### Week 39 (The Himalayan Database ⛰️) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w39_2020.R)
 
 ![./images/Week_39_Himalayas.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_39_Himalayas.png)
 
-### Week 38 (United States Kids Spending) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w38_2020.R)
+### Week 38 (United States Kids Spending 🚸) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w38_2020.R)
 
 ![./images/Week_38_Kids.gif](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_38_Kids.gif)
 
-### Week 37 (Friends) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w37_2020.R)
+### Week 37 (Friends 📺) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w37_2020.R)
 
 ![./images/Week_37_Friends.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_37_Friends.png)
 
-### Week 36 (Global Crop Varieties) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w36_2020.R)
+### Week 36 (Global Crop Varieties 🌐) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w36_2020.R)
 
 ![./images/Week_36_Crops.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_36_Crops.png)
 
-### Week 35 (CHOPPED TV Series) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w35_2020.R)
+### Week 35 (CHOPPED TV Series 🍳) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w35_2020.R)
 
 ![./images/Week_35_Chopped.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_35_Chopped.png)
 
-### Week 34 (Global Extinct Species) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w34_2020.R)
+### Week 34 (Global Extinct Species 🌐) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w34_2020.R)
 
 ![./images/Week_34_Plants.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_34_Plants.png)
 
