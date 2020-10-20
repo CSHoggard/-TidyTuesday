@@ -21,6 +21,10 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ## 2020
 
+### Week 43 (Great American Beer Festival 🍺) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w43_2020.R)
+
+![./images/Week_42_GABF.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_43_GABF.png)
+
 ### Week 42 (DataSaurus Dozen 🦕) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w42_2020.R)
 
 ![./images/Week_42_Datasaurus.gif](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_42_Datasaurus.gif)
