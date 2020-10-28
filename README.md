@@ -21,9 +21,13 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ## 2020
 
+### Week 44 (Canadian Wind Turbines 🍁) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w44_2020.R)
+
+![./images/Week_44_wind_power.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_44_wind_power.png)
+
 ### Week 43 (Great American Beer Festival 🍺) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w43_2020.R)
 
-![./images/Week_42_GABF.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_43_GABF.png)
+![./images/Week_43_GABF.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_43_GABF.png)
 
 ### Week 42 (DataSaurus Dozen 🦕) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w42_2020.R)
 
