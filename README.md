@@ -21,6 +21,10 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ## 2020
 
+### Week 45 (The IKEA Catalogue 🇸🇪) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w45_2020.R)
+
+![./images/Week_45_Ikea.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_45_Ikea.png)
+
 ### Week 44 (Canadian Wind Turbines 🍁) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w44_2020.R)
 
 ![./images/Week_44_wind_power.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_44_wind_power.png)
