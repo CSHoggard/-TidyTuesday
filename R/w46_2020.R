@@ -90,7 +90,7 @@ ggplot(d2, aes(x = year)) +
     plot.margin = margin(30,50,10,50),
     plot.background = element_rect(fill = "#f9f9f9", colour = "#f9f9f9"),
     plot.title = element_text(size = 42, family = "Lato", face = "bold", hjust = 0.5, margin = margin(10,0,20,0)),
-    plot.subtitle = element_textbox_simple(size = 14, family = "Lato", halign = 0.5, margin = margin(0,0,40,0)),
+    plot.subtitle = element_textbox_simple(size = 18, family = "Lato", halign = 0.5, margin = margin(0,0,40,0)),
     plot.caption = element_textbox_simple(size = 10, family = "Lato", halign = 0.5, margin = margin(40,0,10,0)),
     strip.text = element_text(size = 9, family = "Lato", face = "bold"),
     axis.title.x = element_blank(),
