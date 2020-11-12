@@ -21,6 +21,10 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ## 2020
 
+### Week 46 (Landline vs. Mobile 📞) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w46_2020.R)
+
+![./images/Week_46_Phones.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_46_Phones.png)
+
 ### Week 45 (The IKEA Catalogue 🇸🇪) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w45_2020.R)
 
 ![./images/Week_45_Ikea.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_45_Ikea.png)
