@@ -21,6 +21,10 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ## 2020
 
+### Week 49 (Toronto Shelters 🍁) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w49_2020.R)
+
+![./images/Week_49_Toronto.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_49_Toronto.png)
+
 ### Week 48 (Washington Trails ⛰️) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w48_2020.R)
 
 ![./images/Week_48_WTA.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_48_WTA.png)
