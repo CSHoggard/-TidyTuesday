@@ -18,12 +18,17 @@ Quick Link
 
 Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mailto:christianhoggard@gmail.com).  
 
+## 2021
+
+### Week 5 (#breakfreefromplastic 🌐) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w5_2021.R)
+
+![./images/Week_49_Toronto.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_49_Toronto.png)
 
 ## 2020
 
 ### Week 49 (Toronto Shelters 🍁) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w49_2020.R)
 
-![./images/Week_49_Toronto.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_49_Toronto.png)
+![./images/Week_5_Plastics.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_5_Plastics.png)
 
 ### Week 48 (Washington Trails ⛰️) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w48_2020.R)
 
