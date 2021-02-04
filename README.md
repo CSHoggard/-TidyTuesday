@@ -24,6 +24,10 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ![./images/Week_5_Plastics.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_5_Plastics.png)
 
+### Week 3 (TATE Collection 🎨) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w3_2021.R)
+
+![./images/Week_3_Tate.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_3_Tate.png)
+
 ## 2020
 
 ### Week 49 (Toronto Shelters 🍁) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w49_2020.R)
