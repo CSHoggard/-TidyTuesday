@@ -22,7 +22,7 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ### Week 12 (Video Games 🎮) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w12_2021.R)
 
-![./images/Week_12_Games.tiff](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_12_Games.tiff)
+![./images/Week_12_Games.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_12_Games.tiff)
 
 ### Week 5 (#breakfreefromplastic 🌐) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w5_2021.R)
 
