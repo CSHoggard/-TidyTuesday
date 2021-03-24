@@ -41,4 +41,4 @@ ggplot(games.clean, aes(ym,avg, fill = gamename)) +
     panel.grid.major.x = element_line(size = 0.5, color = "#212121", linetype = 3)
     )
 
-ggsave("images/Week_12_Games.tiff", plot = last_plot(), dpi = 350)
+ggsave("images/Week_12_Games.png", plot = last_plot(), dpi = 350)
