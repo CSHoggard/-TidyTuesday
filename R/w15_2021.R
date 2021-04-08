@@ -11,7 +11,7 @@ theme_set(theme_minimal(base_family = "Roboto"))
 
 theme_update(plot.caption = element_text(color = "grey60", size = 10, margin = margin(20,0,-10,0)),
              plot.margin = margin(20,20,20,20),
-             axis.title.x = element_text(size = 10, colour = "grey40", margin = margin(10,0,0,0)),
+             axis.title.x = element_text(size = 11, colour = "grey40", margin = margin(20,0,0,0)),
              axis.title.y = element_blank(),
              axis.text.y = element_markdown(),
              panel.grid.minor = element_blank(),
@@ -63,12 +63,12 @@ ggplot(forest_clean, aes(reorder(entity, change), -change, fill = gl)) +
          geom_col() +
   coord_flip() +
   labs(y = "Absolute Change in Forest Cover (Hectares)",
-       caption = "@CSHoggard • TidyTuesday 15 • Data: Our World In Data") + 
+       caption = "@CSHoggard • #TidyTuesday • Data: Our World In Data") + 
   scale_fill_manual(values = peacock_palette) +
   scale_y_continuous(labels = comma) +
   geom_richtext(
     aes(x = 13, y = 300000,
-        label = "<b style='font-size:18pt;'>Which European countries are <span style='color:#70ACAB;'>losing</span> their forests?</br><br><br><span style='font-size:12pt;'><span style='color:#70ACAB;'>Most of them.</span><br><br>Only <span style='color:#3A571F;'>Norway</span>, <span style='color:#3A571F;'>Bulgaria</span> and the <span style='color:#3A571F;'>United Kingdom</span> have seen increases in forest cover.</br>"), 
+        label = "<b style='font-size:18pt;'>Which European countries are <span style='color:#70ACAB;'>losing</span> their forests?</br><br><br><span style='font-size:12pt;'><span style='color:#70ACAB;'>Most of them.</span><br><br>Only <span style='color:#3A571F;'>Norway</span>, <span style='color:#3A571F;'>Bulgaria</span> and the <span style='color:#3A571F;'>United Kingdom</span> have seen increases in forest cover since 1990.</br>"), 
     inherit.aes = FALSE,
     color = "grey60",
     family = "Roboto",
@@ -79,5 +79,5 @@ ggplot(forest_clean, aes(reorder(entity, change), -change, fill = gl)) +
     label.color = "grey60"
   )
 
-ggsave("images/Week_15_Deforestation.png", plot = last_plot(), width = 200, height = 400, units = "mm", dpi = 400)
+ggsave("images/Week_15_Deforestation.png", plot = last_plot(), units = "mm", dpi = 400)
 
