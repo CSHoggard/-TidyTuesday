@@ -22,7 +22,7 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ### Week 15 (Deforestation 🌳)  [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w15_2021.R)
 
-![./images/Week_15_deforestation.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_15_deforestation.png)
+![./images/Week_15_Deforestation.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_15_Deforestation.png)
 
 ### Week 13 (United Nations 🇺🇳)  [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w13_2021.R)
 
