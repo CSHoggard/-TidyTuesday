@@ -20,6 +20,10 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ## 2021
 
+### Week 18 (CEOs 💼)  [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w18_2021.R)
+
+![./images/Week_18_CEOs.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_18_CEOs.png)
+
 ### Week 15 (Deforestation 🌳)  [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w15_2021.R)
 
 ![./images/Week_15_Deforestation.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_15_Deforestation.png)
