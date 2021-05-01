@@ -20,9 +20,9 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ## 2021
 
-### Week 14 (Makeup Shades ✨)  [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w14_2021.R)
+### Week 15 (Deforestation 🌳)  [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w15_2021.R)
 
-![./images/Week_14_makeup.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_14_makeup.png)
+![./images/Week_15_Deforestation.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_15_Deforestation.png)
 
 ### Week 13 (United Nations 🇺🇳)  [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w13_2021.R)
 
