@@ -20,7 +20,7 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ## 2021
 
-### Week 18 (CEOs 💼)  [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w18_2021.R)
+### Week 18 (CEO Departures 💼)  [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w18_2021.R)
 
 ![./images/Week_18_CEOs.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_18_CEOs.png)
 
