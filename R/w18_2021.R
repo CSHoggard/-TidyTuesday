@@ -28,8 +28,7 @@ departures.clean <- departures %>%
   filter(!exec_fullname == "William G. Parzybok, Jr.") %>%
   mutate(id = row_number())
 
-labels <-
-  departures.clean %>%
+labels <- departures.clean %>%
   filter(id == 135 | id == 2 | id == 253) %>%
   mutate(label = glue::glue("<b>{exec_fullname}</b><br><span style='font-size:8pt'>Duration: {duration} years</span>")) %>% 
   add_column(
@@ -38,11 +37,11 @@ labels <-
   )
 
 ggplot(departures.clean, aes(id, duration2, colour = departure_code)) +
-  geom_segment(aes(x = id, xend = id, y = 0, yend = duration2), size = 0.6) +
+  geom_segment(aes(x = id, xend = id, y = 0, yend = duration2), size = 0.3) +
   geom_rect(aes(xmin = 1, xmax = 651, ymin = 0, ymax = 30), 
-            fill = "grey99", color = "grey99") +
+            fill = "white", color = "white") +
   geom_point(aes(size = duration)) + 
-  labs(caption = "Departure: <span style = 'color:#16A87E;'>Death</span> | <span style = 'color:#3567AB;'>Illness</span> | <span style = 'color:#F2B700;'>Job Performance</span> | <span style = 'color:#7D398C;'>Concerns or Violations</span> | <span style = 'color:#A3A896;'>Retirement</span> | <span style = 'color:#87BF67;'>New Opportunities</span> | <span style = 'color:#E63A70;'>Other</span> <br><br> <b style='font-size:8pt;'><span style = 'color:#BCBCBC;'> Circles represent ten year intervals </span><br><br> @CSHoggard | Data: Gentry et al. (2021)</b>") +
+  labs(caption = "Departure: <span style = 'color:#16A87E;'>Death</span> | <span style = 'color:#3567AB;'>Illness</span> | <span style = 'color:#F2B700;'>Job Performance</span> | <span style = 'color:#7D398C;'>Concerns or Violations</span> | <span style = 'color:#A3A896;'>Retirement</span> | <span style = 'color:#87BF67;'>New Opportunities</span> | <span style = 'color:#E63A70;'>Other</span> <br><br> <b style='font-size:8pt;'><span style = 'color:#BCBCBC;'> Circles represent 10-year intervals </span><br><br> @CSHoggard | Data: Gentry et al. (2021)</b>") +
   geom_hline(aes(yintercept = (40)), size = 0.4, color = "grey80") +
   geom_hline(aes(yintercept = (50)), size = 0.4, color = "grey80") +
   geom_richtext(data = labels, aes(x = x, y = y, label = label, color = departure_code),
