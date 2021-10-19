@@ -1,11 +1,15 @@
 library(tidyverse)
 library(janitor)
 library(ggtext)
+library(magick)
+library(cowplot)
 library(extrafont)
 library(here)
 
 pumpkins <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-10-19/pumpkins.csv') %>%
   clean_names()
+
+pumpkin <- image_read("https://raw.githubusercontent.com/CSHoggard/-TidyTuesday/master/R/week_43_image_data/pumpkin.png") #https://iconscout.com/icons/pumpkin" 
 
 set.seed(5678)
 
@@ -19,30 +23,52 @@ pumpkins.clean <- pumpkins %>%
   sample_n(nrow(.)) %>%
   rowid_to_column()
 
-pumpkins.top.three <- pumpkins.clean %>%
-  top_n(., 3, weight_kg)
-
+pumpkins.top.two <- pumpkins.clean %>%
+  top_n(., 2, weight_kg) %>%
+  mutate(weight_kg = round(weight_kg, 2)) %>%
+  separate(grower_name, c("Last Name", "First Name"), sep = ",") %>%
+  mutate(label = glue::glue("<b><span style='font-size:12pt'><span style='color:#363636;'>{weight_kg} kg</span></span></b> <br><span style='font-size:9pt'>{`First Name`} {`Last Name`}</span><br><b><span style='font-size:7pt'>{gpc_site} ({country})</span></b>"))
 
 ggplot(pumpkins.clean, aes(rowid, weight_kg)) +
-  geom_segment(aes(x = rowid, xend = rowid, y = 0, yend = weight_kg), colour = "#F75F1C", size = 2) +
+  geom_segment(aes(x = rowid, xend = rowid, y = 0, yend = weight_kg), colour = "#ED9B34", size = 2) +
   geom_segment(aes(x = rowid, xend = rowid, y = 0, yend = weight_kg), colour = "#FAF9F6", size = 0.5) +
-  geom_point(data = pumpkins.top.three, aes(rowid, weight_kg, size = weight_kg), shape = 21, stroke = 1, fill = "#F75F1C", colour = "#FAF9F6") +
+  geom_point(data = pumpkins.top.two, aes(rowid, weight_kg), shape = 21, stroke = 1, fill = "#ED9B34", colour = "#FAF9F6") +
   scale_y_reverse(lim = c(1750,0)) +
   labs(y = "weight (kg)",
        caption = "@CSHoggard | #TidyTuesday Week 43 | Source: Great Pumpkin Commonwealth") +
-  geom_text(x = 550, y = -1450,
-            label = "Europe's Biggest Pumpkins!",
-            family = "Commissioner",
-            size = 10,
-            color = "#FAF9F6") +
+  annotate(geom = "richtext", 
+           x = 550, y = 1500, 
+           label = "Europe's Biggest Pumpkins!",
+           family = "Commissioner",
+           fontface = "bold",
+           colour = "#363636",
+           label.colour = NA,
+           size = 10,
+           fill = NA) +
+  annotate(geom = "richtext", 
+           x = 550, y = 1650, 
+           label = "This year <span style='color:#363636;'><b>over 90</span></b> pumpkins have been officially <br> recorded as <span style='color:#363636;'><b>weighing more than 500kg!</span></b> <br><br>(or the same as a small caravan!)",
+           family = "Commissioner",
+           colour = "#FAF9F6",
+           label.colour = NA,
+           size = 5,
+           fill = NA) +
+  geom_richtext(data = pumpkins.top.two, aes(x = rowid, y = (weight_kg + 75), label = label),
+                lineheight = 0.8,
+                size = 4,
+                hjust = 0.5,
+                family = "Commissioner",
+                colour = "white",
+                fill = NA,
+                label.color = NA) +
   theme_minimal() +
+  draw_image(pumpkin, scale = 350, x = 100, y = -1700) +
   coord_cartesian(clip = "off") +
   theme(text=element_text(family = "Commissioner"),
         plot.margin = margin(20,20,20,20),
-        legend.position = "none",
         plot.caption = element_textbox_simple(colour = "#FAF9F6", family = "Commissioner", size = 10, halign = 1, margin = margin(20,0,0,0)),
-        plot.background = element_rect(fill = "#F75F1C",  colour = "#FAF9F6", size = 2),
-        panel.background = element_rect(fill = "#F75F1C", colour = "#F75F1C"),
+        plot.background = element_rect(fill = "#ED9B34",  colour = "#FAF9F6", size = 2),
+        panel.background = element_rect(fill = "#ED9B34", colour = "#ED9B34"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
         axis.title.x = element_blank(),
