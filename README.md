@@ -20,6 +20,10 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ## 2021
 
+### Week 51 (Spice Girls 🎵) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w51_2021.R)
+
+![./images/Week_51_Spice.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_51_Spice.png)
+
 ### Week 43 (Big Pumpkins 🎃) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w43_2021.R)
 
 ![./images/Week_43_Pumpkins.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_43_Pumpkins.png)
