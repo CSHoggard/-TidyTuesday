@@ -18,6 +18,12 @@ Quick Link
 
 Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mailto:christianhoggard@gmail.com).  
 
+## 2022
+
+### Week 4 (Board Games 🎲) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w4_2022.R)
+
+![./images/Week_4_Board_Games.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_4_Board_Games.png)
+
 ## 2021
 
 ### Week 51 (Spice Girls 🎵) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w51_2021.R)
