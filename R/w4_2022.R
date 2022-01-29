@@ -142,8 +142,8 @@ ggraph(layout) +
   labs(caption = "@CSHoggard  •   Source: Kaggle and BoardGameGeek") +
   theme(text = element_text(family = "Alegreya"),
         plot.margin = margin(10,10,10,10),
-        plot.background = element_rect(fill = "grey95", colour = "grey95"),
-        panel.background = element_rect(fill = "grey95", colour = "grey95"),
+        plot.background = element_rect(fill = "grey98", colour = "grey98"),
+        panel.background = element_rect(fill = "grey98", colour = "grey98"),
         legend.position = "none",
         plot.caption = element_text(hjust = 0.5, size = 11, colour = "grey30", family = "Alegreya Sans"))
 
