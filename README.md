@@ -20,6 +20,10 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ## 2022
 
+### Week 21 (Women's Rugby 🏉) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w21_2022.R)
+
+![./images/Week_21_Rugby.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_21_Rugby.png)
+
 ### Week 4 (Board Games 🎲) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w4_2022.R)
 
 ![./images/Week_4_Board_Games.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_4_Board_Games.png)
