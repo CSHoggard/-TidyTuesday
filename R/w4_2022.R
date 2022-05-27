@@ -43,8 +43,8 @@ ggraph(layout) +
   geom_node_point(aes(size = owned, colour = top_seller), alpha = 0.8) +
   scale_colour_manual(values = c("#66b3d4", "#ebae46")) +
   annotate(geom = "richtext", 
-           x = 1.4, y = 6.5, 
-           label = "How different are the best Tabletop Games?",
+           x = 1.9, y = 6.5, 
+           label = "How different are the most popular Board Games?",
            family = "Alegreya",
            colour = "grey20",
            size = 10,
@@ -52,7 +52,7 @@ ggraph(layout) +
            fill = NA) +
   annotate(geom = "richtext", 
            x = -1.83, y = 5.35, 
-           label = "The BoardGameGeek (BGG) forum contains over <b>125,000 different tabletop games</b>.<br>Here, the <b><span style='color:#66b3d4;'>top owned games</span></b> are visualised according to their respective categories.<br> The <span style='font-size:14pt'<b>size</b></span> of the point indicates a greater number of people own that particular game, <br>while the number of branches indicates their degree of interconnectivity.<br><br>Interestingly, the <span style='color:#ebae46;'><b>top 10 owned tabletop games</b></span> are pretty different in their categories.",
+           label = "The BoardGameGeek (BGG) forum contains over <b>20,000 different board games</b>.<br>Here, the <b><span style='color:#66b3d4;'>top owned board games</span></b> are visualised according to their respective categories.<br> The <span style='font-size:14pt'<b>size</b></span> of the point indicates a greater number of people own that particular game, <br>while the number of branches indicates their degree of interconnectivity.<br><br>Interestingly, the <span style='color:#ebae46;'><b>top 10 owned board games</b></span> are pretty different in their categories.",
            family = "Alegreya",
            colour = "grey20",
            hjust = 0,
@@ -142,9 +142,9 @@ ggraph(layout) +
   labs(caption = "@CSHoggard  •   Source: Kaggle and BoardGameGeek") +
   theme(text = element_text(family = "Alegreya"),
         plot.margin = margin(10,10,10,10),
-        plot.background = element_rect(fill = "grey98", colour = "grey98"),
-        panel.background = element_rect(fill = "grey98", colour = "grey98"),
+        plot.background = element_rect(fill = "#FAF9F6", colour = "#FAF9F6"),
+        panel.background = element_rect(fill = "#FAF9F6", colour = "#FAF9F6"),
         legend.position = "none",
-        plot.caption = element_text(hjust = 0.5, size = 11, colour = "grey30", family = "Alegreya Sans"))
+        plot.caption = element_text(hjust = 0.5, size = 11, colour = "grey30", family = "Alegreya Sans", margin = margin(0,0,10,0)))
 
 ggsave(filename = "Week_4_Board_Games.png", plot = last_plot(), dpi = 400)
