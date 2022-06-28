@@ -20,6 +20,14 @@ Feedback is welcome via [Twitter](https://twitter.com/CSHoggard) or [e-mail](mai
 
 ## 2022
 
+### Week 26 (Gender Pay Gap 💼) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w26_2022.R)
+
+![./images/Week_26_Gender_Pay_Gap.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_26_Gender_Pay_Gap.png)
+
+### Week 21 (Women's Rugby 🏉) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w21_2022.R)
+
+![./images/Week_21_Rugby.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_21_Rugby.png)
+
 ### Week 4 (Board Games 🎲) [(code)](https://github.com/CSHoggard/-TidyTuesday/blob/master/R/w4_2022.R)
 
 ![./images/Week_4_Board_Games.png](https://github.com/CSHoggard/-TidyTuesday/blob/master/images/Week_4_Board_Games.png)
